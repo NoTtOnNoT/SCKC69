@@ -53,3 +53,11 @@ body, html {
 .img-shadow {
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
+
+/* ใส่เพิ่มในไฟล์ style.css */
+.fade-mask {
+    /* ทำให้ขอบล่างค่อยๆ โปร่งแสง */
+    -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+    object-fit: contain; /* ปรับเป็น contain เพื่อให้เห็นตัวคนครบ ไม่โดนตัด */
+}
